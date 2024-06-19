@@ -42,37 +42,37 @@ subprojects {
             named("check").get().dependsOn(checkstyle)
         }
     }
-    plugins.withType<com.vanniktech.maven.publish.MavenPublishBasePlugin> {
-        configure<com.vanniktech.maven.publish.MavenPublishBaseExtension> {
-            configure(com.vanniktech.maven.publish.AndroidSingleVariantLibrary())
-            publishToMavenCentral(com.vanniktech.maven.publish.SonatypeHost.Companion.S01)
-            signAllPublications()
-            pom {
-                name.set(project.name)
-                description.set(releaseDescription)
-                url.set(releaseUrl)
-                licenses {
-                    license {
-                        name.set("The Apache License, Version 2.0")
-                        url.set("http://www.apache.org/licenses/LICENSE-2.0.txt")
-                        distribution.set("http://www.apache.org/licenses/LICENSE-2.0.txt")
-                    }
-                }
-                developers {
-                    developer {
-                        id.set(developerId)
-                        name.set(developerName)
-                        url.set(developerUrl)
-                    }
-                }
-                scm {
-                    url.set(releaseUrl)
-                    connection.set("scm:git:https://github.com/$developerId/$releaseArtifact.git")
-                    developerConnection.set("scm:git:ssh://git@github.com/$developerId/$releaseArtifact.git")
-                }
-            }
-        }
-    }
+//    plugins.withType<com.vanniktech.maven.publish.MavenPublishBasePlugin> {
+//        configure<com.vanniktech.maven.publish.MavenPublishBaseExtension> {
+//            configure(com.vanniktech.maven.publish.AndroidSingleVariantLibrary())
+//            publishToMavenCentral(com.vanniktech.maven.publish.SonatypeHost.Companion.S01)
+//            signAllPublications()
+//            pom {
+//                name.set(project.name)
+//                description.set(releaseDescription)
+//                url.set(releaseUrl)
+//                licenses {
+//                    license {
+//                        name.set("The Apache License, Version 2.0")
+//                        url.set("http://www.apache.org/licenses/LICENSE-2.0.txt")
+//                        distribution.set("http://www.apache.org/licenses/LICENSE-2.0.txt")
+//                    }
+//                }
+//                developers {
+//                    developer {
+//                        id.set(developerId)
+//                        name.set(developerName)
+//                        url.set(developerUrl)
+//                    }
+//                }
+//                scm {
+//                    url.set(releaseUrl)
+//                    connection.set("scm:git:https://github.com/$developerId/$releaseArtifact.git")
+//                    developerConnection.set("scm:git:ssh://git@github.com/$developerId/$releaseArtifact.git")
+//                }
+//            }
+//        }
+//    }
 }
 
 fun modify(extension: com.android.build.gradle.BaseExtension) {
