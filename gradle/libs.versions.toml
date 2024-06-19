@@ -13,8 +13,8 @@ androidx-test = "1.5.0"
 android-application = { id = "com.android.application", version.ref = "android-plugin" }
 android-library = { id = "com.android.library", version.ref = "android-plugin" }
 dokka = { id = "org.jetbrains.dokka", version.ref = "kotlin" }
-maven-publish = "com.vanniktech.maven.publish.base:0.25.3"
-git-publish = "org.ajoberstar.git-publish:4.2.0"
+#maven-publish = "com.vanniktech.maven.publish.base:0.25.3"
+#git-publish = "org.ajoberstar.git-publish:4.2.0"
 pages = "com.hendraanggrian.pages:0.1"
 
 [libraries]

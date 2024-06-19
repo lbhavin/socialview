@@ -5,7 +5,7 @@ plugins {
     alias(libs.plugins.android.library)
     checkstyle
     jacoco
-    alias(libs.plugins.maven.publish)
+//    alias(libs.plugins.maven.publish)
 }
 
 android {

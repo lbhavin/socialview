@@ -7,7 +7,7 @@ val releaseUrl: String by project
 
 plugins {
     alias(libs.plugins.pages)
-    alias(libs.plugins.git.publish)
+//    alias(libs.plugins.git.publish)
 }
 
 pages {
@@ -28,11 +28,11 @@ pages {
     }
 }
 
-gitPublish {
-    repoUri.set("git@github.com:$developerId/$releaseArtifact.git")
-    branch.set("gh-pages")
-    contents.from(pages.outputDirectory)
-}
+//gitPublish {
+//    repoUri.set("git@github.com:$developerId/$releaseArtifact.git")
+//    branch.set("gh-pages")
+//    contents.from(pages.outputDirectory)
+//}
 
 tasks {
     register(LifecycleBasePlugin.CLEAN_TASK_NAME) {
