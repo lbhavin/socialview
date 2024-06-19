@@ -20,8 +20,10 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.core.util.PatternsCompat;
 import androidx.core.util.Supplier;
-import com.hendraanggrian.appcompat.socialview.R;
+
+import com.hendraanggrian.appcompat.socialview.autocomplete.R;
 import com.hendraanggrian.appcompat.socialview.widget.SocialView;
+
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Objects;

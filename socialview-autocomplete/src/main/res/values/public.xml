@@ -8,4 +8,13 @@
   <public name="posts" type="plurals"/>
 
   <public name="mention" type="string"/>
+
+  <public name="socialViewStyle" type="attr"/>
+
+  <public name="socialFlags" type="attr"/>
+  <public name="hashtagColor" type="attr"/>
+  <public name="mentionColor" type="attr"/>
+  <public name="hyperlinkColor" type="attr"/>
+
+  <public name="Widget.SocialView" type="style"/>
 </resources>
